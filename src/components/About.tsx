@@ -2,12 +2,12 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   const coreSkills = [
-    "Full-Stack Development",
-    "UI/UX Design",
-    "Cloud Architecture",
-    "API Development",
-    "Database Design",
-    "System Integration"
+    "End-to-End Analytical Solutions",
+    "Data Engineering & Governance",
+    "AI & LLM Integration",
+    "Business Intelligence Development",
+    "Data Science & Automation",
+    "Cross-Sector Analytics Expertise"
   ];
 
   return (
@@ -20,20 +20,20 @@ const About = () => {
           
           <div className="space-y-8 animate-fade-in">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate full-stack developer with a keen eye for design and a love for creating 
-              seamless user experiences. With years of experience building web applications, I specialize 
-              in transforming complex problems into elegant, intuitive solutions.
+              Analytics and business intelligence expert with 10+ years of cross-sector experience spanning FMCG, 
+              Manufacturing, Logistics, Supply Chain Management, and Aviation industries.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My approach combines technical expertise with creative thinking, ensuring that every project 
-              not only functions flawlessly but also delights users. I believe in writing clean, maintainable 
-              code and staying current with the latest technologies and best practices.
+              I specialize in managing end-to-end analytical projects including data engineering, data governance, 
+              automation, data science, AI engineering, and LLM integration projects within organizations.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me exploring new design trends, contributing to open-source 
-              projects, or sharing knowledge with the developer community.
+              Proficient in full stack development: APIs, SQL, NoSQL, Python, Power BI, JavaScript, Azure, 
+              Power Automate. With a Bachelor's degree in Supply Chain Management and a Master's degree in 
+              Computer Science and Econometrics, I combine analytical rigor with technical expertise to deliver 
+              impactful business solutions.
             </p>
           </div>
           

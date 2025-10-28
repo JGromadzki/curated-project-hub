@@ -5,33 +5,33 @@ const Skills = () => {
   const skillCategories = [
     {
       icon: Layout,
-      title: "Frontend",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js"],
-    },
-    {
-      icon: Server,
-      title: "Backend",
-      skills: ["Node.js", "Python", "Express", "GraphQL", "REST APIs"],
+      title: "BI & Visualization",
+      skills: ["Power BI", "Tableau", "D3.js", "Data Storytelling", "Dashboard Design"],
     },
     {
       icon: Database,
-      title: "Database",
-      skills: ["PostgreSQL", "MongoDB", "Redis", "Firebase", "Supabase"],
-    },
-    {
-      icon: Zap,
-      title: "DevOps",
-      skills: ["Docker", "AWS", "CI/CD", "GitHub Actions", "Vercel"],
+      title: "Data Engineering",
+      skills: ["SQL", "NoSQL", "Snowflake", "Azure", "Data Pipelines"],
     },
     {
       icon: Code,
-      title: "Tools",
-      skills: ["Git", "VS Code", "Figma", "Postman", "Jest"],
+      title: "Programming",
+      skills: ["Python", "JavaScript", "React", "APIs", "Power Automate"],
+    },
+    {
+      icon: Zap,
+      title: "AI & Data Science",
+      skills: ["LLM Integration", "ML Forecasting", "NLP", "Predictive Models", "AI Engineering"],
+    },
+    {
+      icon: Server,
+      title: "Data Governance",
+      skills: ["Data Quality", "Master Data", "Automation", "ETL", "Process Optimization"],
     },
     {
       icon: Smartphone,
-      title: "Mobile",
-      skills: ["React Native", "Flutter", "iOS", "Android", "PWA"],
+      title: "Domain Expertise",
+      skills: ["Aviation", "Supply Chain", "FMCG", "Manufacturing", "Logistics"],
     },
   ];
 

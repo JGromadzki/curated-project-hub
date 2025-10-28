@@ -17,15 +17,15 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-            Hi, I'm <span className="text-accent">Your Name</span>
+            Hi, I'm <span className="text-white/90">Jakub Gromadzki</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-300 mb-4 font-light">
-            Full-Stack Developer
+          <p className="text-xl md:text-2xl text-white/90 mb-4 font-light">
+            Business Intelligence Expert
           </p>
           
-          <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            I craft exceptional digital experiences that blend beautiful design with powerful functionality.
+          <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
+            Transforming complex data into actionable insights through analytics, automation, and AI engineering.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -50,24 +50,24 @@ const Hero = () => {
           
           <div className="flex gap-6 justify-center">
             <a 
-              href="https://github.com" 
+              href="https://github.com/jakubgromadzki" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-accent transition-colors duration-300"
+              className="text-white/70 hover:text-white transition-colors duration-300"
             >
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://linkedin.com/in/jakubgromadzki" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-accent transition-colors duration-300"
+              className="text-white/70 hover:text-white transition-colors duration-300"
             >
               <Linkedin className="h-6 w-6" />
             </a>
             <a 
-              href="mailto:your.email@example.com"
-              className="text-gray-400 hover:text-accent transition-colors duration-300"
+              href="mailto:contact@jakubgromadzki.com"
+              className="text-white/70 hover:text-white transition-colors duration-300"
             >
               <Mail className="h-6 w-6" />
             </a>

@@ -29,10 +29,10 @@ const Contact = () => {
                     <div>
                       <p className="font-medium mb-1">Email</p>
                       <a 
-                        href="mailto:your.email@example.com"
+                        href="mailto:contact@jakubgromadzki.com"
                         className="text-muted-foreground hover:text-accent transition-colors duration-200"
                       >
-                        your.email@example.com
+                        contact@jakubgromadzki.com
                       </a>
                     </div>
                   </div>
@@ -44,7 +44,7 @@ const Contact = () => {
                     <div>
                       <p className="font-medium mb-1">Location</p>
                       <p className="text-muted-foreground">
-                        San Francisco, CA
+                        Dubai, UAE
                       </p>
                     </div>
                   </div>
@@ -58,7 +58,7 @@ const Contact = () => {
                         className="hover:bg-accent hover:text-white hover:border-accent transition-colors duration-300"
                         asChild
                       >
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/jakubgromadzki" target="_blank" rel="noopener noreferrer">
                           <Github className="h-5 w-5" />
                         </a>
                       </Button>
@@ -69,7 +69,7 @@ const Contact = () => {
                         className="hover:bg-accent hover:text-white hover:border-accent transition-colors duration-300"
                         asChild
                       >
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://linkedin.com/in/jakubgromadzki" target="_blank" rel="noopener noreferrer">
                           <Linkedin className="h-5 w-5" />
                         </a>
                       </Button>
@@ -82,8 +82,8 @@ const Contact = () => {
                     <p className="text-sm font-semibold text-accent mb-2">Availability Status</p>
                     <p className="text-foreground font-medium mb-3">Open to opportunities</p>
                     <p className="text-sm text-muted-foreground">
-                      Currently available for freelance projects and full-time positions. 
-                      Let's discuss how we can work together!
+                      Open to consulting opportunities and collaboration on analytics, BI, and AI engineering projects. 
+                      Let's discuss how data can transform your business!
                     </p>
                   </div>
                   
@@ -92,7 +92,7 @@ const Contact = () => {
                     className="w-full bg-accent hover:bg-accent/90 transition-all duration-300 hover:scale-105"
                     asChild
                   >
-                    <a href="mailto:your.email@example.com">
+                    <a href="mailto:contact@jakubgromadzki.com">
                       <Mail className="mr-2 h-5 w-5" />
                       Send me an email
                     </a>

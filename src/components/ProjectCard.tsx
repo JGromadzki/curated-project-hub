@@ -1,7 +1,6 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink, Github } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { ArrowUpRight } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -10,8 +9,6 @@ interface ProjectCardProps {
   technologies: string[];
   role: string;
   outcome: string;
-  liveUrl?: string;
-  githubUrl?: string;
 }
 
 const ProjectCard = ({
@@ -21,75 +18,65 @@ const ProjectCard = ({
   technologies,
   role,
   outcome,
-  liveUrl,
-  githubUrl,
 }: ProjectCardProps) => {
   return (
-    <Card className="overflow-hidden group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border">
-      <div className="relative overflow-hidden aspect-video">
-        <img 
-          src={image} 
-          alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      </div>
-      
-      <CardContent className="p-6 space-y-4">
-        <h3 className="text-2xl font-bold group-hover:text-accent transition-colors duration-300">
-          {title}
-        </h3>
+    <Card className="group h-full overflow-hidden border-border/50 hover:border-accent/30 hover:shadow-xl transition-all duration-500 bg-card/50 backdrop-blur-sm">
+      <CardContent className="p-0">
         
-        <p className="text-muted-foreground leading-relaxed">
-          {description}
-        </p>
-        
-        <div className="space-y-3">
-          <div>
-            <span className="text-sm font-semibold text-foreground">Role: </span>
-            <span className="text-sm text-muted-foreground">{role}</span>
-          </div>
+        {/* Project Image */}
+        <div className="relative overflow-hidden aspect-video">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
           
-          <div>
-            <span className="text-sm font-semibold text-foreground">Impact: </span>
-            <span className="text-sm text-accent">{outcome}</span>
-          </div>
-        </div>
-        
-        <div className="flex flex-wrap gap-2">
-          {technologies.map((tech) => (
-            <Badge key={tech} variant="outline" className="text-xs">
-              {tech}
+          {/* Role Badge */}
+          <div className="absolute top-4 right-4">
+            <Badge 
+              variant="secondary" 
+              className="bg-white/95 backdrop-blur-sm text-foreground shadow-lg border-0"
+            >
+              {role}
             </Badge>
-          ))}
+          </div>
         </div>
-        
-        <div className="flex gap-3 pt-4">
-          {liveUrl && (
-            <Button 
-              size="sm" 
-              className="bg-accent hover:bg-accent/90"
-              asChild
-            >
-              <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="mr-2 h-4 w-4" />
-                Live Demo
-              </a>
-            </Button>
-          )}
+
+        {/* Content */}
+        <div className="p-6 space-y-4">
           
-          {githubUrl && (
-            <Button 
-              size="sm" 
-              variant="outline"
-              asChild
-            >
-              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                <Github className="mr-2 h-4 w-4" />
-                Code
-              </a>
-            </Button>
-          )}
+          {/* Title */}
+          <h3 className="text-xl md:text-2xl font-semibold text-foreground group-hover:text-accent transition-colors duration-300 flex items-start justify-between gap-2">
+            {title}
+            <ArrowUpRight className="h-5 w-5 flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </h3>
+
+          {/* Description */}
+          <p className="text-muted-foreground leading-relaxed">
+            {description}
+          </p>
+
+          {/* Outcome */}
+          <div className="pt-2 pb-3">
+            <p className="text-sm font-medium text-accent/90">
+              {outcome}
+            </p>
+          </div>
+
+          {/* Technologies */}
+          <div className="flex flex-wrap gap-2 pt-2 border-t border-border/50">
+            {technologies.map((tech) => (
+              <Badge
+                key={tech}
+                variant="outline"
+                className="text-xs font-medium border-border/50 hover:bg-accent/10 hover:border-accent/30 transition-colors duration-300"
+              >
+                {tech}
+              </Badge>
+            ))}
+          </div>
         </div>
       </CardContent>
     </Card>

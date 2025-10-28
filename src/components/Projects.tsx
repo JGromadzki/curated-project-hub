@@ -3,55 +3,64 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   const projects = [
     {
-      title: "Airport Operations Centralized Analytical Platform",
-      description: "Designed and developed a centralized analytical platform providing executive-level real-time access to critical airport operational KPIs across all key performance areas.",
+      title: "Airport Operations Analytics Platform",
+      description: "Centralized real-time platform delivering critical operational KPIs to C-suite and senior leadership across all airport performance areas.",
       image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
       technologies: ["Power BI", "Azure", "JavaScript", "React", "SQL"],
       role: "Technical Expert",
-      outcome: "Delivered real-time operational intelligence to C-suite and senior leadership",
+      outcome: "Real-time operational intelligence for executive decision-making",
     },
     {
-      title: "Passenger Insights and Market Research",
-      description: "Developed an automated passenger insights platform that collects and analyzes customer feedback from Dubai International Airport and key competitor airports. Replaced third-party vendor solutions and drastically reduced subscription costs.",
+      title: "Passenger Insights & Market Research",
+      description: "Automated platform analyzing customer feedback from Dubai International and competitor airports. Replaced vendor solutions with cost-effective internal system.",
       image: "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=800&q=80",
-      technologies: ["Python", "API Integration", "AI Engineering", "NLP"],
+      technologies: ["Python", "API Integration", "AI", "NLP"],
       role: "Lead Analyst",
-      outcome: "Automated market research with continuous, scalable insights",
+      outcome: "Continuous automated insights with 70% cost reduction",
     },
     {
-      title: "AI Engineering & Data Science Development",
-      description: "Led enterprise-wide AI and LLM adoption initiatives to enhance analytical capabilities, automate insights generation, and embed artificial intelligence across existing data infrastructure and business processes.",
+      title: "Enterprise AI & LLM Integration",
+      description: "Led AI adoption initiatives embedding large language models across data infrastructure to automate insights and enhance analytical capabilities enterprise-wide.",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
-      technologies: ["LLM", "Power BI", "Snowflake", "Python", "ML Forecasting"],
+      technologies: ["LLM", "Power BI", "Snowflake", "Python", "ML"],
       role: "AI Engineering Lead",
-      outcome: "Integrated AI across analytical solutions and delivered team upskilling programs",
+      outcome: "Organization-wide AI integration with team upskilling programs",
     },
     {
-      title: "Business Intelligence and Automation Projects",
-      description: "Developed end-to-end analytical solutions for airside operations, CRM integration, and financial reporting. Replaced manual workflows with automated systems using Power BI, Power Automate, and Python.",
+      title: "BI Automation & Operations Suite",
+      description: "End-to-end solutions for airside operations, CRM, and financial reporting. Replaced manual workflows with automated systems using modern stack.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-      technologies: ["Power BI", "Power Automate", "Python", "Azure", "Figma"],
+      technologies: ["Power BI", "Power Automate", "Python", "Azure"],
       role: "Senior Analyst",
-      outcome: "Optimized terminal operations and automated regulatory-compliant reporting",
+      outcome: "Optimized operations with automated regulatory compliance",
     },
   ];
 
   return (
-    <section id="projects" className="py-24 bg-secondary/30">
+    <section id="projects" className="py-20 md:py-32 bg-secondary/20">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="max-w-7xl mx-auto">
+          
+          {/* Section Header */}
+          <div className="text-center mb-16 md:mb-20 space-y-4 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
               Featured Projects
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A selection of my recent work showcasing diverse technical challenges and creative solutions
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              Real-world solutions driving business transformation
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 animate-fade-in">
-            {projects.map((project) => (
-              <ProjectCard key={project.title} {...project} />
+          {/* Projects Grid */}
+          <div className="grid lg:grid-cols-2 gap-6 md:gap-8 animate-fade-in">
+            {projects.map((project, index) => (
+              <div 
+                key={project.title}
+                className="animate-fade-in"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <ProjectCard {...project} />
+              </div>
             ))}
           </div>
         </div>

@@ -7,14 +7,6 @@ const Contact = () => {
     <section id="contact" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Let's Work Together
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              I'm currently open to new opportunities and collaborations
-            </p>
-          </div>
           
           <Card className="animate-fade-in">
             <CardContent className="p-8 md:p-12">

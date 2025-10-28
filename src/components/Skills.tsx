@@ -6,7 +6,7 @@ const Skills = () => {
     {
       icon: Layout,
       title: "BI & Visualization",
-      skills: ["Power BI", "Tableau", "D3.js", "Data Storytelling", "Dashboard Design"],
+      skills: ["Power BI", "Tableau", "Data Storytelling", "Dashboard Design", "UX & UI Best Practices"],
     },
     {
       icon: Database,
@@ -16,17 +16,17 @@ const Skills = () => {
     {
       icon: Code,
       title: "Programming",
-      skills: ["Python", "JavaScript", "React", "APIs", "Power Automate"],
+      skills: ["Python", "APIs", "Power Automate", "ETL", "Automation"],
     },
     {
       icon: Zap,
       title: "AI & Data Science",
-      skills: ["LLM Integration", "ML Forecasting", "NLP", "Predictive Models", "AI Engineering"],
+      skills: ["LLM Integration", "Machine Learning", "Predictive Models"],
     },
     {
       icon: Server,
       title: "Data Governance",
-      skills: ["Data Quality", "Master Data", "Automation", "ETL", "Process Optimization"],
+      skills: ["Data Quality", "Master Data", "Automation", "Process Optimization"],
     },
     {
       icon: Smartphone,
